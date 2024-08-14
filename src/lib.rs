@@ -1,10 +1,12 @@
 #![no_std]
+mod base243_prediv;
 mod base3;
 mod bct;
 mod dpt;
 mod engine;
 mod trit;
 
+pub use crate::base243_prediv::Base243PreDiv;
 pub use crate::base3::Base3;
 pub use crate::bct::BCT;
 pub use crate::dpt::DPT;
