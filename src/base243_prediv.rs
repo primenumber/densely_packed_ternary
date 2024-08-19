@@ -26,7 +26,7 @@ impl Base243PreDiv {
             value += u8::from(*elem) * pow3;
             pow3 *= 3;
         }
-        ((value as u16 * 256 + 242) / 243) as u8
+        ((value as u16 * 256 + 255) / 243) as u8
     }
 
     fn decode_chunk(&self, mut encoded_byte: u8) -> Option<[Trit; CHUNK_SIZE]> {
